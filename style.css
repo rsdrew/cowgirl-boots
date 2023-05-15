@@ -1,0 +1,84 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    letter-spacing: .4ch;
+    min-height: 100vh;
+}
+
+#body {
+    max-width: 1000px;
+    margin: auto;
+    padding-inline: 2rem;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 32px;
+}
+
+#header {
+    font-size: 3rem;
+    padding-block: 3rem;
+    background-color: rgb(255, 48, 227);
+    color: white;
+    text-align: center;
+}
+
+#get-ready {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+#ticket {
+    width: 100%;
+}
+
+#success {
+    width: auto;
+}
+
+#ticket, #success {
+    background-color: rgb(255, 255, 81);
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: .5ch;
+    transition: background-color .3s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+#ticket:hover {
+    cursor: pointer;
+    background-color: rgb(185, 185, 0);
+}
+#youre-in {
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#code {
+    font-size: 3rem;
+}
+
+.hidden {
+    display: none;
+}
