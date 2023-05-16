@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <title>Offline Inline Kids</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Cowgirl Boots</title>
 </head>
 <body>
-    <h1 id="header">Offline Inline Kids Concert</h1>
+    <svg id="header-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="rgb(255, 48, 227)" fill-opacity="1" d="M0,256L120,234.7C240,213,480,171,720,170.7C960,171,1200,213,1320,234.7L1440,256L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+    <h1 id="header">Cowgirl Boots Concert</h1>
     <div id="body">
-        <p id="get-ready">Get ready for the show! Click below to get a ticket!</p>
-        <button id="ticket">TICKET</button>
-        <div id="success" class="hidden">
-            <p id="youre-in">You're in! Take a screenshot of your code and enjoy the show!</p>
-            <p id="code">C00-LRY-4N</p>
+        <div id="top">
+            <p id="get-ready">Get ready for the show! Click below to get a ticket!</p>
+            <p id="youre-in" class="hidden">You're in! Take a screenshot of your code and enjoy the show!</p>
+        </div>
+        <hr id="divider">
+        <div id="bottom">
+            <button id="ticket">TICKET</button>
+            <p id="code" class="hidden">C00-LRY-4N</p>
         </div>
     </div>
 </body>
