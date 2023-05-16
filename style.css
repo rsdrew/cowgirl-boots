@@ -22,10 +22,17 @@ body {
 }
 
 #body {
-    max-width: 1000px;
-    margin: auto;
-    padding-inline: 2rem;
+    max-width: min(1000px, calc(100vw - 80px));
+    padding: 2rem;
     text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+#body, #top *, #bottom *, #divider {
+    transition: background-color .3s ease-in-out, opacity .5s ease-in-out;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -34,7 +41,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 p {
-    font-size: 32px;
+    font-size: 1.5rem;
 }
 
 .box {
@@ -48,6 +55,8 @@ p {
 #header {
     font-size: 3rem;
     padding-block: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 9rem;
     color: white;
     text-align: center;
     letter-spacing: .4ch;
@@ -62,30 +71,35 @@ p {
 }
 
 #top *, #bottom *, #divider {
-    transition: background-color .3s ease-in-out, opacity .5s ease-in-out;
     position: relative;
     z-index: 1;
 }
 
 #top {
-    padding-block: 5rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
     position: relative;
     z-index: 1;
 }
 
 #divider {
-    background-color: white;
-    height: .2rem;
+    background-color: black;
+    height: .5rem;
     border-radius: 30px;
     border: none;
     margin-top: 0;
-    margin-bottom: 5rem;
+    margin-block: 2rem;
 }
 
-#bottom {
+#bottom > * {
+    min-height: 200px;
+}
 
+p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#info > #first-line {
+    margin-bottom: 1rem;
 }
 
 #ticket {
@@ -101,7 +115,6 @@ p {
     border-radius: 30px;
     border: none;
     letter-spacing: .5ch;
-    margin-bottom: 2rem;
 }
 
 #ticket:hover {
@@ -111,6 +124,9 @@ p {
 
 #code {
     font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #youre-in, #code {
@@ -118,7 +134,7 @@ p {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 @media screen and (min-width:500px) {

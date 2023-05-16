@@ -10,15 +10,17 @@ document.getElementById('ticket').addEventListener('click', (e) => {
         if(percent >= 120) {
             clearInterval(loadingAnimation);
 
-            let getReady = document.getElementById('get-ready');
+            let body = document.getElementById('body');
+            let info = document.getElementById('info');
             let divider = document.getElementById('divider');
 
-            getReady.style.opacity = 0;
+            body.style.opacity = 0;
+            info.style.opacity = 0;
             divider.style.opacity = 0;
             button.style.opacity = 0;
 
             setTimeout(() => {
-                getReady.classList.add('hidden');
+                info.classList.add('hidden');
                 button.classList.add('hidden');
 
                 let youreIn = document.getElementById('youre-in');
@@ -28,6 +30,7 @@ document.getElementById('ticket').addEventListener('click', (e) => {
                 youreIn.classList.remove('hidden');
 
                 setTimeout(() => {
+                    body.style.opacity = 1;
                     code.style.opacity = 1;
                     divider.style.opacity = 1;
                     youreIn.style.opacity = 1;
